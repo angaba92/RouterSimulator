@@ -52,4 +52,3 @@ For the output I have simply limited myself to output on the screen exactly what
 
 
 As a personal opinion, I want to say that it has been very gratifying to have finished the project, although, after many hours of work and effort, I didn't even know if I would get it on time after so many consecutive failures.
- Translated with www.DeepL.com/Translator (free version)
