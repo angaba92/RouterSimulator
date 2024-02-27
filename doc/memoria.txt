@@ -1,0 +1,62 @@
+							
+
+
+
+							ANDRES GARCIA-BAQUERO LEON
+	
+
+
+
+
+
+							MEMORIA PROYECTO PROGRAMACION II
+
+
+Procedo en esta memoria a explicar a grandes rasgos el funcionamiento del proyecto y mi modo de resolucion.
+ 
+Fichero de Configuracion
+
+
+
+
+
+Este fichero lo he procesado caracter a caracter, para ello, he creado funciones para simplificar el procesamiento, a saber:
+
+Al ir leyendo el fichero, he ido guardando cada caracter en una estructura nodo, luego enlazo todos los nodos, posteriormente los paso a cadena de caracteres y finalmente con esa cadena creo la estructura interfaz. Para ello utilizo las funciones CreaNodo, Creacadena, EnlazaCaracter, CreaInterfaz.
+
+Mientras realizo este proceso, voy comprobando algunas consideraciones, como que el numero de interfaces leida y declaradas sean iguales.
+
+Posteriormente debo leer las direcciones ip de cada subred, asi pues, la direccion, tras ser leida, la guardo en una tabla, y con el nombre de la subred procedo a aplicar el algoritmo descrito antes, pero esta vez guardandolo en una nueva estructura, IP. Despues de este proceso, voy enlazando cada direccion ip leida a la lista de interfaces creada anteriormente. Para ello utilizo las funciones, CreaIP, y ComparaEnlazaInterfaz entre otras.
+
+Las pertinentes comprobaciones de errores a esta altura, como comprobar la no repeticion de una misma direccion o que no sobrepase la direccion de 255, la hago en este momento, con ayuda de las funciones ComparaDireccion y BuscaDireccion.
+
+
+
+
+
+Fichero de entrada
+
+
+
+
+En este fichero, relizo una lectura previa del caracter especial '<' y entro en un bucle para procesarlo. Comienzo procesando el nombre de la interfaz con el algoritmo que utilice tambien para el de configuracion.
+
+Posteriormente, proceso el resto de la linea guardando todo en una tabla de como maximo 1024 posiciones hasta salto de linea. Una vez hecho esto, creo el paquete de datos con CreaPaquete. 
+
+Dentro de esta funcion voy descomponiendo la tabla en direccion origen, direccion destino, longitud leida, longitud real, datos, autorreferencia y error de longitud y relleno el paquete con estos datos.
+En la misma funcion, compruebo si ha habido error en la longitud.
+Tras crear el paquete, lo enlazo en la interfaz correspondiente.
+
+
+
+Fichero de salida
+
+
+
+Para la salida simplemente me he limitado a sacar por pantalla exactamente lo explicado en el enuncidado del proyecto.
+
+
+
+
+
+Como opinion personal, quiero decir que ha sido muy gratificante haber terminado el proyecto, aunque eso si, despues de muchas horas de trabajo y esfuerzo, incluso no sabia si lo conseguiria a tiempo tras tantos fallos consecutivos.
